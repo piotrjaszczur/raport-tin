@@ -75,7 +75,7 @@ Wizualizacja 3D płytki:
 \includegraphics[width=4 in]{images/3D_1.png}
 \end{center}
 \caption{Widok PCB na warstwę górną}
-\label{fig:PCB_top}
+\label{fig:PCB_3D_top}
 \end{figure}
 
 \begin{figure}[H]
@@ -83,7 +83,27 @@ Wizualizacja 3D płytki:
 \includegraphics[width=4 in]{images/3D_2.png}
 \end{center}
 \caption{Widok PCB na warstwę dolną}
-\label{fig:PCB_bottom}
+\label{fig:PCB_3D_bottom}
 \end{figure}
 
 Projekt PCB uwzględniał zachowanie odległości pomiędzy ścieżkami w celu zredukowania zakłóceń podczas transmisji szybkich sygnałów (redukcja wpływu efektu odległościowego - ang. \emph{proximity effect}).
+
+Zdjęcia płytki po zmontowaniu:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=4 in]{images/PCB_front.jpeg}
+\end{center}
+\caption{Widok płytki na warstwę górną}
+\label{fig:PCB_top}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=4 in]{images/PCB_rear.jpeg}
+\end{center}
+\caption{Widok płytki na warstwę dolną}
+\label{fig:PCB_bottom}
+\end{figure}
+
+Po sprawdzeniu multimetrem wszystkie ścieżki zachowują ciągłość, a także nie występują między nimi żadne zwarcia. Napięcie wyjściowe stabilizatora wynosi około 2,5 V. Po zadaniu 3,3 V na wejście analizatora skutkuje sygnałem nieprzekraczającym 2,5 V po ograniczeniu przez diody transil.

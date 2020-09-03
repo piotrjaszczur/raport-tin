@@ -13,7 +13,7 @@ Ta część projektu odpowiada za analizę nadchodzących z wejść sygnałów i
 		\item "11" - wyzwalanie zarówno zboczem narastającym jak i opadającym
 	\end{itemize}
 	
-Początkowo jak i po resecie, wyjście \emph{WREN} jest w stanie wysokim, aby móc natychmiastowo zapisać pierwszą próbkę tuz po wyzwoleniu. Stan sygnału \emph{WREN} jest sterowany tak, aby zapisywać wartości od pierwszej próbki aż do ostatniej. Sygnał \emph{Q} odświeża się po uzyskaniu nowej próbki i zmianie adresu zapisu (sygnał \emph{ADDRQ}) na odpowiedni.
+Początkowo, jak i po resecie, wyjście \emph{WREN} jest w stanie wysokim, aby móc natychmiastowo zapisać pierwszą próbkę tuz po wyzwoleniu. Stan sygnału \emph{WREN} jest sterowany tak, aby zapisywać wartości od pierwszej próbki aż do ostatniej. Sygnał \emph{Q} odświeża się po uzyskaniu nowej próbki i zmianie adresu zapisu (sygnał \emph{ADDRQ}) na odpowiedni.
 Po zresetowaniu, układ przełącza się w tryb nasłuchiwania sygnału wejściowego w oczekiwaniu na wzór wyzwalający.
 Schemat blokowy modułu przedstawiono na rysunku \ref{sampler_block_diagram}
 
