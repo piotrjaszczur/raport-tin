@@ -1,6 +1,7 @@
 \chapter{Część sprzętowa}
 
-Część sprzętowa projektu obejmuje zaprojektowanie oraz zmontowanie PCB - nakładki na płytkę Maximator. Wykorzystany układ FPGA jest zgodny z logiką 2,5 V, dlatego niezbędny był układ kondycjonowania dla wejść, aby zapewnić bezproblemową pracę podczas testowania układów zgodnych z logiką 3,3 V. Dodatkowym celem było zapewnienie interfejsu do sterowania pracą urządzenia. \\
+Część sprzętowa projektu obejmuje zaprojektowanie oraz zmontowanie PCB - nakładki na płytkę Maximator. Wykorzystany układ FPGA jest zgodny z logiką 2,5 V, dlatego niezbędny był układ kondycjonowania dla wejść, aby zapewnić bezproblemową pracę podczas testowania układów zgodnych z logiką 3,3 V. Dodatkowym celem było zapewnienie interfejsu do sterowania pracą urządzenia.
+
 Wykorzystano pięć przycisków, które służą do:
 \begin{itemize}
 \item CH+; CH- - zmiana wybranego kanału
@@ -8,9 +9,11 @@ Wykorzystano pięć przycisków, które służą do:
 \item TRIG\_SEL - zmiana sposobu 
 \item RESET - sprzętowy reset Maximator'a
 \end{itemize}
-Dodatkowo znajduje się dioda \textit{TRIG\_STAT} sygnalizująca wyzwolenie zapisu. \\
+Dodatkowo znajduje się dioda \textit{TRIG\_STAT} sygnalizująca wyzwolenie zapisu. 
 
-Kondycjonowanie sygnału zostało zrealizowane za pomocą diod transil. Wymagały one osobnego zasilania napięciem 2.5 V, dlatego na płytce został umieszczony stabilizator. Dodatkowo szeregowo do wejścia został umieszczony rezystor o wartości $1 k\Omega$. Ma on za zadanie ograniczać maksymalny prąd, który popłynie podczas włączenia diody. \\
+
+Kondycjonowanie sygnału zostało zrealizowane za pomocą diod transil. Wymagały one osobnego zasilania napięciem 2.5 V, dlatego na płytce został umieszczony stabilizator. Dodatkowo szeregowo do wejścia został umieszczony rezystor o wartości $1 k\Omega$. Ma on za zadanie ograniczać maksymalny prąd, który popłynie podczas włączenia diody. 
+
 Poniżej przedstawiono obliczenia prądu płynącego przez diodę (z pominięciem napięcia na niej) dla napięcia wejściowego równego 3,3 V:
 \begin{equation}
 I = \frac{3,3\ V - 2,5\ V}{1\ k\Omega} = 0,8\ mA
